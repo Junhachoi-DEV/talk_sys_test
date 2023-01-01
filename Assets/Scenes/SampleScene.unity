@@ -872,7 +872,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\uC5EC\uAE30\uB294 \uB300\uD654\uCC3D \uC785\uB2C8\uB2E4."
+  m_Text: 
 --- !u!222 &1884627743
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1021,8 +1021,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d68c17281e890674897f64ed612912d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  character_img: {fileID: 1941279497}
   dialog_talk: {fileID: 1884627742}
-  dialog_speed: 0.12
+  dialog_speed: 0.02
+  count: 0
+  dialogues:
+  - dialogue: "\uC548\uB155 \uB098\uB294 \uB098\uD0DC\uC57C.  \uB610 \uB9CC\uB098\uB294\uAD6C\uB098...
+      \n\uB108\uB294 \uAE30\uC5B5\uC774 \uC5C6\uC744\uD14C\uC9C0\uB9CC... \n\uC774\uC81C
+      \uC778\uC0AC\uD558\uB294\uAC83\uB3C4 \uC9C0\uACA8\uC6CC!"
+    cgs: {fileID: 1941279497}
+  - dialogue: "\uC6B0\uB9AC\uAC00 \uB610\uB9CC\uB0AC\uB2E4\uACE0?... \uADF8\uAC8C
+      \uBB34\uC2A8 \uC18C\uB9AC\uC57C?"
+    cgs: {fileID: 863976650}
 --- !u!1 &2103699120
 GameObject:
   m_ObjectHideFlags: 0

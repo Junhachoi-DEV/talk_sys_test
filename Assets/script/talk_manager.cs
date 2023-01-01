@@ -18,11 +18,11 @@ public class talk_manager : MonoBehaviour
     public bool is_talking;
 
 
-    dialog_controller dialog_con;
+    dialogue_controller dialogue_con;
     void Awake()
     {
         t_panel.SetActive(false);
-        dialog_con = GetComponent<dialog_controller>();
+        dialogue_con = GetComponent<dialogue_controller>();
     }
     void Update()
     {
@@ -36,7 +36,15 @@ public class talk_manager : MonoBehaviour
             t_panel.SetActive(true);
             if (Input.GetMouseButtonDown(0))
             {
-                dialog_con.dialog_speed = 0.01f;
+                if(dialogue_con.count < dialogue_con.dialogues.Length) //대화가 끝나기전
+                {
+                    dialogue_con.next_dialogue();
+                }
+                else
+                {
+                    is_talking = false;
+                }
+                
             }
         }
         else
