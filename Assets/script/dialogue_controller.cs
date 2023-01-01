@@ -9,7 +9,7 @@ public class _dialogue
     [TextArea]//인스펙터창에 한줄 이상 쓸수있게 만들어줌
     public string dialogue;  //글
     public Image cgs; // 교체이미지.(표정변화 등등)
-    
+
 }
 public class dialogue_controller : MonoBehaviour
 {
@@ -21,13 +21,27 @@ public class dialogue_controller : MonoBehaviour
 
     public _dialogue[] dialogues; //리스트
 
-    
+    private void Start()
+    {
+        character_img.color = new Color(0.3f, 0.3f, 0.3f, 1);
+    }
+
     public void next_dialogue()
     {
+        
         dialog_talk.text = "";
         string sample_text = dialogues[count].dialogue;
+        
         character_img = dialogues[count].cgs;
-        count++;
+        character_img.color = new Color(1, 1, 1, 1); //밝아짐
+
+        //인덱스 오류 방지
+        if (count != 0)
+        {
+            dialogues[count - 1].cgs.color = new Color(0.3f, 0.3f, 0.3f, 1); //어두어짐
+        }
+
+        count++;//다음
         StartCoroutine(typing(sample_text));
     }
 

@@ -375,7 +375,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.2924528, g: 0.2924528, b: 0.2924528, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -866,7 +866,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 1
     m_MaxSize: 100
-    m_Alignment: 0
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 1
@@ -932,7 +932,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.2924528, g: 0.2924528, b: 0.2924528, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1026,13 +1026,15 @@ MonoBehaviour:
   dialog_speed: 0.02
   count: 0
   dialogues:
-  - dialogue: "\uC548\uB155 \uB098\uB294 \uB098\uD0DC\uC57C.  \uB610 \uB9CC\uB098\uB294\uAD6C\uB098...
-      \n\uB108\uB294 \uAE30\uC5B5\uC774 \uC5C6\uC744\uD14C\uC9C0\uB9CC... \n\uC774\uC81C
-      \uC778\uC0AC\uD558\uB294\uAC83\uB3C4 \uC9C0\uACA8\uC6CC!"
+  - dialogue: "\uC6B0\uB9AC... \uB610 \uB9CC\uB098\uB294\uAD6C\uB098... \n\uB108\uB294
+      \uAE30\uC5B5\uC774 \uC5C6\uC744\uD14C\uC9C0\uB9CC... "
     cgs: {fileID: 1941279497}
-  - dialogue: "\uC6B0\uB9AC\uAC00 \uB610\uB9CC\uB0AC\uB2E4\uACE0?... \uADF8\uAC8C
-      \uBB34\uC2A8 \uC18C\uB9AC\uC57C?"
+  - dialogue: "\uC6B0\uB9AC\uAC00 \uB9CC\uB0AC\uC5C8\uB2E4\uACE0?... \uADF8\uAC8C
+      \uBB34\uC2A8 \uC18C\uB9AC\uC57C? "
     cgs: {fileID: 863976650}
+  - dialogue: "\uB108\uB294 \uAE30\uC5B5 \uBABB\uD560\uAC70\uC57C \uADF8\uAC74 \uB610
+      \uD558\uB098\uC758 \uB108\uC600\uAC70\uB4E0."
+    cgs: {fileID: 1941279497}
 --- !u!1 &2103699120
 GameObject:
   m_ObjectHideFlags: 0
