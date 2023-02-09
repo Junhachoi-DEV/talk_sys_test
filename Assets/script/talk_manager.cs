@@ -8,13 +8,12 @@ public class talk_manager : MonoBehaviour
 {
     public GameObject t_panel;
 
-    public Image g1;
-    public Image g2;
+    public Image[] charecter;
     public Image talk_bar;
 
     public Text dialog_talk;
 
-    public int id;
+    //public int id;
     public bool is_talking;
 
 
@@ -36,7 +35,7 @@ public class talk_manager : MonoBehaviour
             t_panel.SetActive(true);
             if (Input.GetMouseButtonDown(0))
             {
-                if(dialogue_con.count < dialogue_con.dialogues.Length) //´ëÈ­°¡ ³¡³ª±âÀü
+                if(dialogue_con.count < dialogue_con.dialogues.Length) //Â´Ã«ÃˆÂ­Â°Â¡ Â³Â¡Â³ÂªÂ±Ã¢Ã€Ã¼
                 {
                     dialogue_con.next_dialogue();
                 }
