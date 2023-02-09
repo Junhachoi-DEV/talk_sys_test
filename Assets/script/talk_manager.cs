@@ -8,10 +8,10 @@ public class talk_manager : MonoBehaviour
 {
     public GameObject t_panel;
 
-    public Image[] charecter;
-    public Image talk_bar;
+    //public Image[] charecter;
+    //public Image talk_bar;
 
-    public Text dialog_talk;
+    //public Text dialog_talk;
 
     //public int id;
     public bool is_talking;
